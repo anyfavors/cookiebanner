@@ -25,15 +25,7 @@ module.exports = {
         ,
         ["@semantic-release/git", {
             "assets": ["docs/CHANGELOG.md","package.json"],
-        }],
-        [
-            "@qiwi/semantic-release-gh-pages-plugin",
-            {
-                "msg": "updated",
-                "src": "dist",
-                "pullTagsBranch": ""
-            }
-        ]
+        }]
     ],
     "preset": "angular"
 }
