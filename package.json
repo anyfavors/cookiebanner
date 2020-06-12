@@ -16,6 +16,7 @@
     "vue-js-toggle-button": "^1.3.3"
   },
   "devDependencies": {
+    "@qiwi/semantic-release-gh-pages-plugin": "^3.0.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/exec": "^5.0.0",
