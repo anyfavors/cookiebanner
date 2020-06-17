@@ -11,20 +11,34 @@
             <template v-slot:header-wrapper>.</template>
 
             <CJumbotron :fluid=true>
-                <h1 class="display-3">Vi er helt tossede med småkager</h1>
+                <h1 class="display-3">Cookies</h1>
+
+                <p>
+                    Dette site bruger cookies til at forbedre visningen af indholdet, huske dine valg samt til statistik
+                    for at kunne optimere indholdet løbende. Vi videregiver kun data til 3.part efter aftale og til
+                    intern brug.
+                </p>
+                <p>Vi sætter først cookies, når du har accepterede cookies via knapperne. Bemærk enkelte/nogle
+                    indholdselementer ikke vises korrekt, hvis du undlader at acceptere eller vælger at afvise vores
+                    cookies.</p>
+
+                <p>Du kan altid ændre dine valg om cookies ved at klikke på ”Mine valg af cookies”, der fremover vil stå
+                    øverst på siden, når du har valgt</p>
+                <a href="">Læs om vores cookies og cookiepolitik </a>
 
                 <CRow class="lead" alignHorizontal="center">
-                    <CCol col="2">
-                        <CButton class="btn-behance btn-pill">Accepter valgte</CButton>
+                    <CCol col="3">
+                        <CButton class="btn-secondary btn-pill">Accepter valgte</CButton>
+                    </CCol>
+                    <CCol col="3">
+                        <CButton class="btn-secondary btn-pill">Accepter ingen</CButton>
                     </CCol>
                     <CCol col="2">
-                        <CButton class="btn-danger btn-pill">Accepter ingen</CButton>
-                    </CCol>
-                    <CCol col="2">
-                        <CButton class="btn-info btn-pill">Accepter alle</CButton>
+                        <CButton class="btn-success btn-pill">Accepter alle</CButton>
                     </CCol>
                 </CRow>
 
+                <CRow><hr /></CRow>
 
                 <CRow alignVertical="baseline" alignHorizontal="center" class="catsel">
                     <CCol col="2">
@@ -127,20 +141,26 @@
                 collapse: false,
                 innerCollapse: false,
                 fields: ['navn', 'afsender', 'forml', 'expiry', 'type'],
-                items: [{navn: 'phpsess', afsender: 'me', forml: 'session',expiry:'never', type: 'https'},
-                    {navn: 'phpsess', afsender: 'santa', forml: 'session',expiry:'session', type: 'https'},
-                    {navn: 'aspse', afsender: 'none', forml: 'session',expiry:'30 days', type: 'https'},
-                    {navn: 'cfuid', afsender: 'cloudflare', forml: 'protection',expiry:'never', type: 'https'}
+                items: [{navn: 'phpsess', afsender: 'me', forml: 'session', expiry: 'never', type: 'https'},
+                    {navn: 'phpsess', afsender: 'santa', forml: 'session', expiry: 'session', type: 'https'},
+                    {navn: 'aspse', afsender: 'none', forml: 'session', expiry: '30 days', type: 'https'},
+                    {navn: 'cfuid', afsender: 'cloudflare', forml: 'protection', expiry: 'never', type: 'https'}
                 ],
-                itemsPref: [{navn: 'pref', afsender: 'easterbunny', forml: 'preferences',expiry:'never', type: 'https'},
-                    {navn: 'setns', afsender: 'john', forml: 'preferences',expiry:'never', type: 'https'},
-                    {navn: 'cookie_opts', afsender: 'he-man', forml: 'preferences',expiry:'never', type: 'https'},
-                    {navn: 'adsrv', afsender: 'doe,john', forml: 'preferences',expiry:'never', type: 'https'}
+                itemsPref: [{
+                    navn: 'pref',
+                    afsender: 'easterbunny',
+                    forml: 'preferences',
+                    expiry: 'never',
+                    type: 'https'
+                },
+                    {navn: 'setns', afsender: 'john', forml: 'preferences', expiry: 'never', type: 'https'},
+                    {navn: 'cookie_opts', afsender: 'he-man', forml: 'preferences', expiry: 'never', type: 'https'},
+                    {navn: 'adsrv', afsender: 'doe,john', forml: 'preferences', expiry: 'never', type: 'https'}
                 ],
-                itemsStat: [{navn: 'ads', afsender: 'adsrvr', forml: 'statistik',expiry:'never', type: 'https'},
-                    {navn: 'adsy', afsender: 'adsrvr2', forml: 'statistik',expiry:'never', type: 'https'},
-                    {navn: 'spammy', afsender: 'adsrvr3', forml: 'statistik',expiry:'never', type: 'https'},
-                    {navn: 'tracky', afsender: 'adsrvr1', forml: 'statistik',expiry:'never', type: 'https'}
+                itemsStat: [{navn: 'ads', afsender: 'adsrvr', forml: 'statistik', expiry: 'never', type: 'https'},
+                    {navn: 'adsy', afsender: 'adsrvr2', forml: 'statistik', expiry: 'never', type: 'https'},
+                    {navn: 'spammy', afsender: 'adsrvr3', forml: 'statistik', expiry: 'never', type: 'https'},
+                    {navn: 'tracky', afsender: 'adsrvr1', forml: 'statistik', expiry: 'never', type: 'https'}
                 ],
                 cookiepolicy: "What Are Cookies\n" +
                     "\n" +
@@ -275,7 +295,22 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.catsel {
-    margin-top: 1rem;
-}
+    .catsel {
+        margin-top: 1rem;
+    }
+    .modal-warning .modal-content {
+        border-color: #f9b115;
+        background-color: #fff2d1;
+    }
+
+    .modal-content {
+        background-color:  #fff2d1 !important
+    }
+    .modal-body {
+       background-color:  #fff2d1 !important;
+        padding: 0 0 0 0;
+    }
+    .jumbotron {
+        background-color:  #fff2d1 !important
+    }
 </style>
