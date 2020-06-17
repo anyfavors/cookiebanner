@@ -1,5 +1,19 @@
 <template>
     <div>
+        <CRow>
+            <vue-lorem lorem sentences />
+        </CRow>
+        <CRow>
+            <p v-text="$faker.lorem.sentences()"></p>
+        </CRow>
+        <CRow>
+            <CCol>
+                <vue-lorem image avatar />
+            </CCol>
+            <CCol>
+                <vue-lorem image avatar />
+            </CCol>
+        </CRow>
         <CModal
                 title="Modal title"
                 color="warning"
@@ -130,6 +144,7 @@
 </template>
 
 <script>
+
     export default {
         name: 'HelloWorld',
         props: {
