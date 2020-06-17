@@ -294,18 +294,16 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
     .catsel {
         margin-top: 1rem;
     }
+
     .modal-warning .modal-content {
         border-color: #f9b115;
         background-color: #fff2d1;
     }
 
-    .modal-content {
-        background-color:  #fff2d1 !important
-    }
     .modal-body {
        background-color:  #fff2d1 !important;
         padding: 0 0 0 0;
