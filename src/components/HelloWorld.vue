@@ -25,7 +25,7 @@
             <template v-slot:header-wrapper>.</template>
 
             <CJumbotron :fluid=true>
-                <h1 class="display-3">Cookies</h1>
+                <h1 class="display-3">Københavns Kommunes hjemmeside bruger cookies </h1>
 
                 <p>
                     Dette site bruger cookies til at forbedre visningen af indholdet, huske dine valg samt til statistik
@@ -38,17 +38,16 @@
 
                 <p>Du kan altid ændre dine valg om cookies ved at klikke på ”Mine valg af cookies”, der fremover vil stå
                     øverst på siden, når du har valgt</p>
-                <a href="">Læs om vores cookies og cookiepolitik </a>
 
                 <CRow class="lead" alignHorizontal="center">
                     <CCol col="3">
-                        <CButton class="btn-secondary btn-pill">Accepter valgte</CButton>
+                        <CButton class="btn-secondary btn-pill">Kun nødvendige cookies</CButton>
                     </CCol>
                     <CCol col="3">
-                        <CButton class="btn-secondary btn-pill">Accepter ingen</CButton>
+                        <CButton class="btn-success btn-pill">Tillad udvalgte</CButton>
                     </CCol>
                     <CCol col="2">
-                        <CButton class="btn-success btn-pill">Accepter alle</CButton>
+                        <CButton class="btn-success btn-pill">Tillad alle </CButton>
                     </CCol>
                 </CRow>
 
@@ -81,11 +80,11 @@
                     <CCol class="offset-10">
                         <CButton
                                 @click="collapse = !collapse"
-                                color="primary"
+                                color="secondary"
                                 class="mb-2"
                         >
-                            <div v-if="collapse">Mindre info</div>
-                            <div v-if="!collapse">Mere info</div>
+                            <div v-if="collapse">Skjul detaljer</div>
+                            <div v-if="!collapse">Vis detaljer</div>
                         </CButton>
                     </CCol>
                 </CRow>
@@ -107,7 +106,7 @@
                                                     pagination
                                             />
                                         </CTab>
-                                        <CTab title="Preference">
+                                        <CTab title="Præference">
                                             <CDataTable
                                                     :items="itemsPref"
                                                     :fields="fields"
@@ -116,9 +115,18 @@
                                                     pagination
                                             />
                                         </CTab>
-                                        <CTab title="Statistical">
+                                        <CTab title="Statistik">
                                             <CDataTable
                                                     :items="itemsStat"
+                                                    :fields="fields"
+                                                    hover
+                                                    sorter
+                                                    pagination
+                                            />
+                                        </CTab>
+                                        <CTab title="Funktionelle">
+                                            <CDataTable
+                                                    :items="itemsFunk"
                                                     :fields="fields"
                                                     hover
                                                     sorter
@@ -155,27 +163,36 @@
                 warningModal: true,
                 collapse: false,
                 innerCollapse: false,
-                fields: ['navn', 'afsender', 'forml', 'expiry', 'type'],
-                items: [{navn: 'phpsess', afsender: 'me', forml: 'session', expiry: 'never', type: 'https'},
-                    {navn: 'phpsess', afsender: 'santa', forml: 'session', expiry: 'session', type: 'https'},
-                    {navn: 'aspse', afsender: 'none', forml: 'session', expiry: '30 days', type: 'https'},
-                    {navn: 'cfuid', afsender: 'cloudflare', forml: 'protection', expiry: 'never', type: 'https'}
+                fields: ['navn', 'udbyder', 'forml', 'udlb', 'type'],
+                itemsFunk: [{navn: 'phpsess', udbyder: 'me', forml: 'session', udlb: 'never', type: 'https'},
+                    {navn: 'phpsess', udbyder: 'santa', forml: 'session', udlb: 'session', type: 'https'},
+                    {navn: 'aspse', udbyder: 'none', forml: 'session', udlb: '30 days', type: 'https'},
+                    {navn: 'cfuid', udbyder: 'cloudflare', forml: 'protection', udlb: 'never', type: 'https'}
+                ],
+                items: [{navn: 'phpsess', udbyder: 'me', forml: 'session', udlb: 'never', type: 'https'},
+                    {navn: 'phpsess', udbyder: 'santa', forml: 'session', udlb: 'session', type: 'https'},
+                    {navn: 'aspse', udbyder: 'none', forml: 'session', udlb: '30 days', type: 'https'},
+                    {navn: 'cfuid', udbyder: 'cloudflare', forml: 'protection', udlb: 'never', type: 'https'}
                 ],
                 itemsPref: [{
                     navn: 'pref',
-                    afsender: 'easterbunny',
+                    udbyder: 'easterbunny',
                     forml: 'preferences',
-                    expiry: 'never',
+                    udlb: 'never',
                     type: 'https'
                 },
-                    {navn: 'setns', afsender: 'john', forml: 'preferences', expiry: 'never', type: 'https'},
-                    {navn: 'cookie_opts', afsender: 'he-man', forml: 'preferences', expiry: 'never', type: 'https'},
-                    {navn: 'adsrv', afsender: 'doe,john', forml: 'preferences', expiry: 'never', type: 'https'}
+                    {navn: 'setns', udbyder: 'john', forml: 'preferences', udlb: 'never', type: 'https'},
+                    {navn: 'cookie_opts', udbyder: 'he-man', forml: 'preferences', udlb: 'never', type: 'https'},
+                    {navn: 'adsrv', udbyder: 'doe,john', forml: 'preferences', udlb: 'never', type: 'https'}
                 ],
-                itemsStat: [{navn: 'ads', afsender: 'adsrvr', forml: 'statistik', expiry: 'never', type: 'https'},
-                    {navn: 'adsy', afsender: 'adsrvr2', forml: 'statistik', expiry: 'never', type: 'https'},
-                    {navn: 'spammy', afsender: 'adsrvr3', forml: 'statistik', expiry: 'never', type: 'https'},
-                    {navn: 'tracky', afsender: 'adsrvr1', forml: 'statistik', expiry: 'never', type: 'https'}
+                itemsStat: [
+                    {navn: '1111751702_1373418', udbyder: 'Defgo', forml: 'Sikrer at en bruger ikke inviteres til at udfylde flere gange', udlb: '3 mdr.', type: 'https'},
+                    {navn: 'defgo_domainEnterTime', udbyder: 'Defgo', forml: 'Sikrer at en bruger inviteres første gang', udlb: 'Session', type: 'https'},
+                    {navn: 'defgo_lastVisitedSites', udbyder: 'Defgo', forml: 'Registrerer hvilke sider der er besøgt på sitet', udlb: 'session', type: 'https'},
+                    {navn: 'TestCookies', udbyder: 'Defgo', forml: 'Registrerer om brugeren har cookies aktiveret i sin browser', udlb: 'never', type: 'https'},
+                    {navn: 'ASPSESSIONID', udbyder: 'Defgo', forml: 'Bevarer brugertilstand på tværs af sideforespørgsler', udlb: 'session', type: 'https'},
+                    {navn: 'JSESSIONID', udbyder: 'Defgo', forml: 'Bevarer brugertilstand på tværs af sideforespørgsler', udlb: 'session', type: 'https'},
+
                 ],
                 cookiepolicy: "What Are Cookies\n" +
                     "\n" +
