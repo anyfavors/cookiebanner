@@ -27,16 +27,16 @@
             <CJumbotron :fluid=true>
                 <h1 class="display-3">Københavns Kommunes hjemmeside bruger cookies </h1>
 
-                <p>
+                <p class="leftp">
                     Dette site bruger cookies til at forbedre visningen af indholdet, huske dine valg samt til statistik
                     for at kunne optimere indholdet løbende. Vi videregiver kun data til 3.part efter aftale og til
                     intern brug.
                 </p>
-                <p>Vi sætter først cookies, når du har accepterede cookies via knapperne. Bemærk enkelte/nogle
+                <p class="leftp">Vi sætter først cookies, når du har accepterede cookies via knapperne. Bemærk enkelte/nogle
                     indholdselementer ikke vises korrekt, hvis du undlader at acceptere eller vælger at afvise vores
                     cookies.</p>
 
-                <p>Du kan altid ændre dine valg om cookies ved at klikke på ”Mine valg af cookies”, der fremover vil stå
+                <p class="leftp">Du kan altid ændre dine valg om cookies ved at klikke på ”Mine valg af cookies”, der fremover vil stå
                     øverst på siden, når du har valgt</p>
 
                 <CRow class="lead" alignHorizontal="center">
@@ -331,10 +331,11 @@
         margin-top: 1rem;
     }
 
-    p
+    .leftp
     {
         text-align: left;
     }
+
     .modal-warning .modal-content {
         border-color: #f9b115;
         background-color: #fff2d1;
