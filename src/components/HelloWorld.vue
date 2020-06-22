@@ -57,19 +57,19 @@
                     <CCol col="2">
                         <toggle-button :value="true"
                                        disabled="disabled"
-                                       color="#82C7EB"
+                                       :color="{checked:'#2EB85C',unchecked:'#CED2D8'}"
                                        :labels="true"/>
                         Nødvendige
                     </CCol>
                     <CCol col="2">
                         <toggle-button :value="false"
-                                       color="#82C7EB"
+                                       :color="{checked:'#2EB85C',unchecked:'#CED2D8'}"
                                        :labels="true"/>
                         Præference
                     </CCol>
                     <CCol col="2">
                         <toggle-button :value="false"
-                                       color="#82C7EB"
+                                       :color="{checked:'#2EB85C',unchecked:'#CED2D8'}"
                                        :labels="true"/>
                         Statistik
                     </CCol>
