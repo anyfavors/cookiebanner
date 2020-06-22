@@ -331,6 +331,10 @@
         margin-top: 1rem;
     }
 
+    p
+    {
+        text-align: left;
+    }
     .modal-warning .modal-content {
         border-color: #f9b115;
         background-color: #fff2d1;
