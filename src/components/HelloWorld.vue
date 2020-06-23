@@ -69,10 +69,18 @@
                     </CCol>
                     <CCol col="2">
                         <toggle-button :value="false"
-                                       :color="{checked:'#2EB85C',unchecked:'#CED2D8'}"
+                                       :color="{checked:'#2EB85C',unchecked:'#CED2D8'}" 
                                        :labels="true"/>
                         Statistik
                     </CCol>
+
+
+                    <CCol col="2">
+                                            <toggle-button :value="false"
+                                                           :color="{checked:'#2EB85C',unchecked:'#CED2D8'}"
+                                                           :labels="true"/>
+                                            Funktionel
+                                        </CCol>
 
                 </CRow>
 
