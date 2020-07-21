@@ -17,7 +17,7 @@
     "vue-lorem": "^0.1.2"
   },
   "devDependencies": {
-    "@qiwi/semantic-release-gh-pages-plugin": "^4.0.0",
+    "@qiwi/semantic-release-gh-pages-plugin": "^4.0.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/exec": "^5.0.0",
