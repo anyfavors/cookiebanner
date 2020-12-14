@@ -1090,10 +1090,10 @@
   resolved "https://registry.yarnpkg.com/@coreui/utils/-/utils-1.3.1.tgz#ebe6fa00ae7f46d166b26f116e74d55dfc89f5e0"
   integrity sha512-WuWHX7bg89cJH34TWVsLe9RsxzBhTApj+X2Ja19xhjcpxt5Gv11Ozm+fwYt6DD7DgncTvpwYrMcnNlpp701UOg==
 
-"@coreui/vue@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-3.1.5.tgz#b469b16e86af1405cd891c7bd318a1cbaf2e5cf1"
-  integrity sha512-IFn+E1+sX5nkx7dP+YM/h8s6OdEdwLaqZusaQwCsYhD42ZEcrnkLm1y0cEao3A88j/o/MijPGMMm9xMmQCwnbg==
+"@coreui/vue@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-3.1.6.tgz#f9f20857a68e803f119eedd87ccff7e7c110aace"
+  integrity sha512-mI3zrPhMYBbnHtw0+92XBR61Lg8xjEEVcTcWaLMQSmX2eajPf5IEhXc8aKeCBd2FCZfB2LO5aDtwD7eGCHJ5tg==
   dependencies:
     "@coreui/icons" "^2.0.0-rc.0"
     "@coreui/icons-vue" "^1.3.5"
