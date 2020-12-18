@@ -1090,15 +1090,15 @@
   resolved "https://registry.yarnpkg.com/@coreui/utils/-/utils-1.3.1.tgz#ebe6fa00ae7f46d166b26f116e74d55dfc89f5e0"
   integrity sha512-WuWHX7bg89cJH34TWVsLe9RsxzBhTApj+X2Ja19xhjcpxt5Gv11Ozm+fwYt6DD7DgncTvpwYrMcnNlpp701UOg==
 
-"@coreui/vue@^3.1.6":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-3.1.6.tgz#f9f20857a68e803f119eedd87ccff7e7c110aace"
-  integrity sha512-mI3zrPhMYBbnHtw0+92XBR61Lg8xjEEVcTcWaLMQSmX2eajPf5IEhXc8aKeCBd2FCZfB2LO5aDtwD7eGCHJ5tg==
+"@coreui/vue@^3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-3.2.7.tgz#dff73f5235cbb0ca2cd42d1b5a193c6c2bc4dede"
+  integrity sha512-FGyjaa1Ic+slyXHNhWQFMaHfE9lvRc4I2vsh5/SBuKVJiEdonik4AGleejWAFuLAYV5Q1BDUPBD8G2PjhcLt7g==
   dependencies:
     "@coreui/icons" "^2.0.0-rc.0"
     "@coreui/icons-vue" "^1.3.5"
     "@coreui/utils" "^1.3.1"
-    "@popperjs/core" "~2.5.4"
+    "@popperjs/core" "^2.6.0"
     lodash.clonedeep "~4.5.0"
     perfect-scrollbar "~1.5.0"
     tooltip.js "~1.3.3"
@@ -1316,10 +1316,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@popperjs/core@~2.5.4":
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.5.4.tgz#de25b5da9f727985a3757fd59b5d028aba75841a"
-  integrity sha512-ZpKr+WTb8zsajqgDkvCEWgp6d5eJT6Q63Ng2neTbzBO76Lbe91vX/iVIW9dikq+Fs3yEo+ls4cxeXABD2LtcbQ==
+"@popperjs/core@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
+  integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
 
 "@qiwi/semantic-release-gh-pages-plugin@^5.0.3":
   version "5.0.3"
