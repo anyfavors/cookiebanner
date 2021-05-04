@@ -11,7 +11,7 @@
   "dependencies": {
     "@coreui/coreui": "^3.4.0",
     "@coreui/vue": "^3.2.9",
-    "core-js": "^3.11.1",
+    "core-js": "^3.11.2",
     "vue": "^2.6.12",
     "vue-js-toggle-button": "^1.3.3",
     "vue-lorem": "^0.1.2"
