@@ -1112,10 +1112,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@coreui/coreui@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-4.0.1.tgz#e5faf540aeea31b0cc8d428d73080a364e4bc6fd"
-  integrity sha512-1mrWnbqoWb7+8ZAMUdlWt0AqVzDEkJglk7F3OaFsQtxienezFvlMNsd1YPPNo+taRzF7HZ8xSDIAItCvlOaMVg==
+"@coreui/coreui@^4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-4.0.4.tgz#e4848efa0c9f2ff6fbbc4d45d5dd73c1f5690f37"
+  integrity sha512-O/xWb+b3bSKTYvedwKJWjzRrTIf5u7t18MrfS13nRM0s1Ogr1H5aSpQQxtaqREDIuHN0KTY6a0bPInvEVeUBTg==
 
 "@coreui/icons-vue@^1.3.5":
   version "1.3.5"
