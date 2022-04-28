@@ -911,10 +911,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@coreui/coreui@^4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-4.0.5.tgz#b2fd0d3ab4d0887ef42c628cbd6f1ecca3d4c62c"
-  integrity sha512-6T9ezeRUIalo4UhQ9/E4COzyFwUqEUYgJcFyuu394qtvMcdoxqSSYQL6LLs/TkaDBN5vdbdLtNDdIWe+/CWG+Q==
+"@coreui/coreui@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-4.1.4.tgz#4c612783788b8774b5e82ab1712bf2e210666983"
+  integrity sha512-YuJ0VnSvrwlgB9b0f5V4SJm2pxe5UQajeP5VMV2fGnimOzDxPPnHK9w2DaTpSIubFYdVZPM+40WZ2wsn8+6XSQ==
 
 "@coreui/vue@^4.0.3":
   version "4.0.3"
