@@ -9,7 +9,7 @@
     "build-report": "vue-cli-service build --report"
   },
   "dependencies": {
-    "@coreui/coreui": "^4.0.5",
+    "@coreui/coreui": "^4.2.6",
     "@coreui/vue": "^4.0.3",
     "core-js": "^3.21.1",
     "vue": "^2.6.14",
